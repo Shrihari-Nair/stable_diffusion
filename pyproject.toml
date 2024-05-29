@@ -10,6 +10,9 @@ python = "^3.10"
 torch = "^2.3.0"
 numpy = "^1.26.4"
 transformers = "^4.41.1"
+pillow = "^10.3.0"
+lightning = "^2.2.5"
+tqdm = "^4.66.4"
 
 
 [build-system]
