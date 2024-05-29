@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from tqdm import tqdm
-from ddpm import DDPMSampler
+from ddpm_sampler import DDPMSampler
 
 WIDTH = 512
 HEIGHT = 512
@@ -10,7 +10,7 @@ LATENTS_HEIGHT = HEIGHT // 8
 
 def generate(
     prompt: str,
-    uncond_prompt : str = None,
+    uncond_prompt : str = None, # negative prompt or empty string.
     input_image=None,
     strength=0.8,
     do_cfg=True,
